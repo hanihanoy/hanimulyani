@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portofolio pribadi Hani Mulyani - keterampilan, pengalaman, dan contoh karya.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portofolio: Hani Mulyani">
+  <meta property="og:image" content="images/profile.jpg">
+
+  <title>Portofolio — Hani Mulyani</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER with semantic elements -->                                                                         
+  <header role="banner" aria-labelledby="site-title">
+    <div class="hero">
+      <img src="hani.jpeg" alt="Foto Hani Mulyani tersenyum, mengenakan kemeja merah" class="profile">
+      <div>
+        <h1 id="site-title">Hani Mulyani</h1>
+        <p id="desc">Mahasiswa / Pengembang Web pemula. Fokus pada HTML semantik, aksesibilitas, dan front-end dasar.</p>
+        <p><strong>NIM:</strong> 2510614007 &nbsp; <strong>Kelas:</strong> 25A1</p>
+        <p><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, JavaScript</p>
+      </div>
+    </div>
+
+    <!-- NAV with skip link for accessibility -->
+    <nav aria-label="Navigasi utama">
+      <a href="#main-content" class="visually-hidden">Lewati ke konten utama</a>
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#experience">Riwayat</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="kumpulan tugas/kumpulan tugas.html">kumpulan tugas</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" aria-labelledby="main-heading">
+    <h2 id="main-heading" class="visually-hidden">Konten Utama Portofolio</h2>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" aria-labelledby="about-heading">
+      <h3 id="about-heading">Tentang Saya</h3>
+      <article aria-describedby="personal-desc">
+        <p id="personal-desc">Halo — saya <strong>Hani Mulyani</strong>. Saya tertarik pada pengembangan web, khususnya struktur HTML semantik dan aksesibilitas. Saya suka membangun halaman yang mudah diakses dan mudah dipelihara.</p>
+        <p tabindex="0">Saya berpengalaman membuat halaman statis, form dengan validasi, serta menyematkan media.</p>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h3 id="skills-heading">Keahlian</h3>
+      <ul aria-labelledby="skills-heading">
+        <li>HTML Semantik & Aksesibilitas</li>
+        <li>CSS Dasar & Layout</li>
+        <li>JavaScript Dasar</li>
+      </ul>
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>Membangun struktur semantik, form, tabel, dan multimedia.</dd>
+        <dt>CSS</dt>
+        <dd>Mengatur layout responsif dan tipografi sederhana.</dd>
+      </dl>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="exp-heading">
+      <h3 id="exp-heading">Riwayat Pendidikan / Pengalaman</h3>
+      <table aria-describedby="table-desc">
+        <caption>Riwayat Pendidikan & Pekerjaan Hani Mulyani</caption>
+        <thead>
+          <tr>
+            <th>Tahun</th>
+            <th>Institusi / Peran</th>
+            <th>Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><time datetime="2021">2021</time> — <time datetime="2024">2024</time></td>
+            <td>Universitas Contoh / Mahasiswa</td>
+            <td colspan="1">Studi di bidang informatika, proyek web sederhana (contoh: portofolio ini).</td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>Magang Web Dev</td>
+            <td>Perancangan halaman statis, optimisasi aksesibilitas.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Catatan: Dokumen menunjukkan pengalaman relevan sampai <time datetime="2025-11-21">21 Nov 2025</time>.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="proj-heading">
+      <h3 id="proj-heading">Contoh Karya / Projek</h3>
+      <div class="projects">
+        <article class="card" aria-labelledby="proj1-title">
+          <h4 id="proj1-title">Website Toko Sederhana</h4>
+          <img src="profile.lnk" alt="angkapan layar toko online sederhana" class="project-img">
+          <p>Landing page statis dengan produk contoh dan grid responsif.</p>
+          <p><a href="https://example.com/project-shop" target="_blank" rel="noopener">Lihat project</a></p>
+        </article>
+
+        <article class="card" aria-labelledby="proj2-title">
+          <h4 id="proj2-title">Video Presentasi — UI/UX</h4>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video presentasi UI/UX" allowfullscreen aria-describedby="yt-desc"></iframe>
+          </div>
+          <p id="yt-desc">Video berdurasi 3 menit yang memperlihatkan demonstrasi antarmuka.</p>
+          <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Buka di YouTube</a></p>
+        </article>
+
+        <article class="card" aria-labelledby="proj3-title">
+          <h4 id="proj3-title">Demo Audio & Video</h4>
+          <p>Contoh media lokal:</p>
+          <video controls width="100%" aria-label="Video demo proyek Hani">
+            <source src="media/presentation.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video tag.
+          </video>
+          <p>Audio contoh:</p>
+          <audio controls aria-label="Audio penjelasan proyek">
+            <source src="media/explain.mp3" type="audio/mpeg">
+            Browser tidak mendukung audio.
+          </audio>
+        </article>
+      </div>
+    </section>
+
+    <!-- ASIDE -->
+    <aside aria-labelledby="aside-heading" tabindex="0">
+      <h4 id="aside-heading">Informasi Kontak Cepat</h4>
+      <p>Email: <a href="mailto:hani@example.com">hani@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/hanimulyani" target="_blank" rel="noopener">linkedin.com/in/hanimulyani</a></p>
+    </aside>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Form Kontak</h3>
+      <form action="#" method="post" novalidate aria-describedby="form-desc">
+        <p id="form-desc">Gunakan formulir ini untuk mengirim pesan. Semua field yang diberi * wajib diisi.</p>
+
+        <fieldset>
+          <legend>Informasi Pengirim</legend>
+
+          <label for="name">Nama *</label>
+          <input id="name" name="name" type="text" required minlength="2" maxlength="100">
+
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="phone">Nomor Telepon</label>
+          <input id="phone" name="phone" type="tel" pattern="^[0-9+\- ]{7,20}$">
+        </fieldset>
+
+        <fieldset>
+          <legend>Pesan Anda</legend>
+          <label for="type">Jenis Kontak</label>
+          <div id="type">
+            <input type="radio" id="rb1" name="contactType" value="saran" required>
+            <label for="rb1">Saran</label>
+            <input type="radio" id="rb2" name="contactType" value="pertanyaan">
+            <label for="rb2">Pertanyaan</label>
+          </div>
+
+          <label for="message">Pesan *</label>
+          <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+
+          <div>
+            <input id="agree" name="agree" type="checkbox" required>
+            <label for="agree">Saya setuju dihubungi kembali (persetujuan).</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© <time datetime="2025-11-21">21 Nov 2025</time> — Hani Mulyani. Dibuat dengan ❤️ menggunakan HTML semantik.</p>
+    <p>Versi: 1.0</p>
+  </footer>
+</body>
+</html>
+

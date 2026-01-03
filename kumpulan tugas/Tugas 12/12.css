@@ -1,0 +1,170 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff1f5;
+  color: #4a044e;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #ec4899, #f472b6);
+  box-shadow: 0 10px 24px rgba(236, 72, 153, 0.35);
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   MAIN MENU
+========================= */
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* =========================
+   MENU LINK
+========================= */
+.main-menu > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.main-menu > li > a:hover,
+.main-menu > li > a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.dropdown-parent {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  min-width: 180px;
+
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 16px 30px rgba(236, 72, 153, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #9d174d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.submenu li a:hover {
+  background-color: #fce7f3;
+}
+
+/* =========================
+   SHOW DROPDOWN
+========================= */
+.dropdown-parent:hover .submenu,
+.dropdown-parent:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
+.nav-cta .cta-button {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #be185d;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(190, 24, 93, 0.35);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.nav-cta .cta-button:hover {
+  background-color: #fdf2f8;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(190, 24, 93, 0.45);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+main {
+  padding: 40px;
+}
+
+main h1 {
+  color: #9d174d;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .main-menu {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
